@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Add a new course to your personal course organizer.">
+    <title>Add Course - co.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">co.</a>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="courses.html" class="nav-link">My Courses</a></li>
+                    <li><a href="add-course.html" class="nav-link active">Add Course</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-top">
+            <div class="container">
+                <p class="label">New Entry</p>
+                <h1>Add Course</h1>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <form class="course-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="course-name">Course Name</label>
+                        <input type="text" id="course-name" name="course-name" placeholder="e.g. Data Structures" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="instructor">Instructor</label>
+                        <input type="text" id="instructor" name="instructor" placeholder="e.g. Dr. Ahmed Hassan" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="credit-hours">Credit Hours</label>
+                        <input type="number" id="credit-hours" name="credit-hours" min="1" max="6" placeholder="3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Optional notes..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-full">Add Course</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>2026 co.</p>
+        </div>
+    </footer>
+</body>
+</html>

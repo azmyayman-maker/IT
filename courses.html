@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View and manage all your registered courses in one place.">
+    <title>My Courses - co.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">co.</a>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="courses.html" class="nav-link active">My Courses</a></li>
+                    <li><a href="add-course.html" class="nav-link">Add Course</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-top">
+            <div class="container">
+                <p class="label">Semester Overview</p>
+                <h1>My Courses</h1>
+            </div>
+        </section>
+
+        <section class="courses-section">
+            <div class="container">
+                <div class="table-wrapper">
+                    <table class="courses-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Course Name</th>
+                                <th>Instructor</th>
+                                <th>Credit Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Introduction to Computer Science</td>
+                                <td>Dr. Ahmed Hassan</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Calculus I</td>
+                                <td>Prof. Sarah Mitchell</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Internet Technology</td>
+                                <td>Dr. Omar Farouk</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Digital Logic Design</td>
+                                <td>Dr. Layla Mostafa</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>English for Academic Purposes</td>
+                                <td>Ms. Nadia Kareem</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-footer">
+                    <p>Total: <strong>15</strong> credit hours</p>
+                    <a href="add-course.html" class="link-arrow">Add another</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>2026 co.</p>
+        </div>
+    </footer>
+</body>
+</html>
