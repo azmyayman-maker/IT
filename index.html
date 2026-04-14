@@ -3,85 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Course Organizer - Manage and track your academic courses efficiently.">
+    <meta name="description" content="Personal Course Organizer - Manage your academic courses.">
     <title>Personal Course Organizer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <a href="index.html" class="logo">co.</a>
-            <input type="checkbox" id="menu-check" class="menu-check">
-            <label for="menu-check" class="menu-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-            </label>
-            <nav class="nav-bar">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="courses.html" class="nav-link">My Courses</a></li>
-                    <li><a href="add-course.html" class="nav-link">Add Course</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav class="nav-bar">
+            <a href="index.html" class="logo">CO</a>
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="courses.html">My Courses</a></li>
+                <li><a href="add-course.html">Add Course</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <p class="label">Personal Course Organizer</p>
-                <h1>Keep it simple.<br>Keep it organized.</h1>
-                <p class="subtitle">One place for all your courses, instructors, and credit hours. Nothing more, nothing less.</p>
-                <div class="hero-actions">
-                    <a href="courses.html" class="btn">View Courses</a>
-                    <a href="add-course.html" class="link-arrow">Add a course</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="divider-section">
-            <div class="container">
-                <div class="line"></div>
-            </div>
-        </section>
-
-        <section class="features">
-            <div class="container">
-                <div class="features-row">
-                    <div class="feature">
-                        <span class="feature-num">01</span>
-                        <h3>Track</h3>
-                        <p>Course names, instructors, and credit hours in one clean view.</p>
-                    </div>
-                    <div class="feature">
-                        <span class="feature-num">02</span>
-                        <h3>Add</h3>
-                        <p>New courses in seconds with a minimal, no-fuss form.</p>
-                    </div>
-                    <div class="feature">
-                        <span class="feature-num">03</span>
-                        <h3>Access</h3>
-                        <p>Works on any device. Phone, tablet, or desktop.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta">
-            <div class="container">
-                <h2>Ready?</h2>
-                <a href="add-course.html" class="btn">Get started</a>
-            </div>
+        <section class="intro">
+            <h1>Personal Course Organizer</h1>
+            <p>A simple tool to keep track of your courses, instructors, and credit hours.</p>
+            <a href="courses.html" class="btn">View My Courses</a>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p>2026 co.</p>
-        </div>
+    <footer>
+        <p>&copy; 2026 Personal Course Organizer</p>
     </footer>
 </body>
 </html>
