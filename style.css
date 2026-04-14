@@ -85,6 +85,10 @@ a {
     border-bottom-color: var(--ink);
 }
 
+.menu-check {
+    display: none;
+}
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -431,7 +435,7 @@ a {
         z-index: 50;
     }
 
-    .nav-bar.open .nav-list {
+    .menu-check:checked ~ .nav-bar .nav-list {
         display: flex;
     }
 
