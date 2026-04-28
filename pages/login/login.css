@@ -1,8 +1,8 @@
 :root {
     --font-heading: 'Playfair Display', Georgia, serif;
     --font-body: 'Inter', -apple-system, sans-serif;
-    --card-max-width: 440px;
-    --card-radius: 24px;
+    --card-max-width: 600px;
+    --card-radius: 20px;
     --input-radius: 12px;
     --btn-radius: 12px;
     --transition-fast: 0.25s cubic-bezier(0.25, 0.1, 0.25, 1.0);
@@ -148,9 +148,10 @@ body {
 }
 
 .auth-card {
-    width: 100%;
+    width: 60%;
     max-width: var(--card-max-width);
-    padding: 44px 40px 36px;
+    padding: 30px;
+    margin: 0px;
     border-radius: var(--card-radius);
     border: 1px solid var(--bg-glass-border);
     background: var(--bg-glass);
@@ -162,7 +163,6 @@ body {
     animation: cardEntrance var(--transition-slow) forwards;
     transition: background-color 0.6s ease, border-color 0.6s ease;
     position: relative;
-    margin: auto;
     flex-shrink: 0;
 }
 
