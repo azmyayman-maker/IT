@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read guest reviews and share your dining experience at L'ELITE restaurant.">
+    <title>Reviews - L'ELITE</title>
+    <link rel="stylesheet" href="../../core/styles/design-tokens.css">
+    <link rel="stylesheet" href="../../core/styles/shared.css">
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="site-nav">
+        <a href="../home/home.html" class="nav-logo">
+            <img src="../../assets/images/logo.png" alt="L'ELITE logo">
+            <span class="nav-logo-text">L'ELITE</span>
+        </a>
+        <button class="nav-hamburger" id="nav-hamburger">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../menu/menu.html">Menu</a></li>
+            <li><a href="../booking/booking.html">Reservation</a></li>
+            <li><a href="../orders/orders.html">Orders</a></li>
+            <li><a href="../team/team.html">Staff</a></li>
+            <li><a href="reviews.html" class="active">Reviews</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+                <span class="icon-sun">&#9728;</span>
+                <span class="icon-moon">&#9790;</span>
+            </button>
+            <a href="../login/login.html" class="nav-signin">
+                <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v2h20v-2c0-3.3-6.7-5-10-5z"/></svg>
+                Sign In
+            </a>
+        </div>
+    </nav>
+
+    <!-- Reviews Content -->
+    <section class="reviews-section">
+        <div class="container">
+            <h1 class="section-title">Guest Reviews</h1>
+            <div class="accent-line"></div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">4.9</span>
+                    <p>Overall Rating</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>Average Stars</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">97%</span>
+                    <p>Recommend Us</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">1.1K</span>
+                    <p>Total Reviews</p>
+                </div>
+            </div>
+
+            <!-- Reviews List -->
+            <div class="reviews-list">
+                <div class="review-card">
+                    <div class="review-top">
+                        <span class="reviewer-name">Azmy Ayman</span>
+                        <span class="review-date">2 days ago</span>
+                    </div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>Excellent restaurant.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-top">
+                        <span class="reviewer-name">Abdallah Ahmed</span>
+                        <span class="review-date">1 week ago</span>
+                    </div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    <p>Amazing food.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-top">
+                        <span class="reviewer-name">Samy Ashour</span>
+                        <span class="review-date">1 day ago</span>
+                    </div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    <p>Good Stuff.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-top">
+                        <span class="reviewer-name">Amgad Mostafa</span>
+                        <span class="review-date">1 Month ago</span>
+                    </div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                    <p>The food was good.</p>
+                </div>
+            </div>
+
+            <!-- Review Form -->
+            <div class="review-form-card">
+                <h2 class="section-title">Share Your Experience</h2>
+                <p class="section-subtitle">Your feedback helps us grow and serve you better</p>
+                <form>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+                        <div class="form-field">
+                            <label>Visit Date</label>
+                            <input type="date">
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label>Your Rating</label>
+                        <div class="star-rating">
+                            <input type="radio" name="stars" id="star-5" value="5"><label for="star-5">&#9733;</label>
+                            <input type="radio" name="stars" id="star-4" value="4"><label for="star-4">&#9733;</label>
+                            <input type="radio" name="stars" id="star-3" value="3"><label for="star-3">&#9733;</label>
+                            <input type="radio" name="stars" id="star-2" value="2"><label for="star-2">&#9733;</label>
+                            <input type="radio" name="stars" id="star-1" value="1"><label for="star-1">&#9733;</label>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label>Your Review</label>
+                        <textarea placeholder="Tell us about your experience..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        &copy; 2026 <span>L'ELITE</span> — All rights reserved
+    </footer>
+
+    <script type="module" src="../../core/scripts/auth-state.js" defer></script>
+    <script src="../../core/scripts/theme.js" defer></script>
+</body>
+</html>

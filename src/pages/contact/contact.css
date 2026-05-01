@@ -1,0 +1,75 @@
+/* =========================================
+   Contact Us Page Styles
+   Author: [Contact Page Owner]
+   ========================================= */
+
+.contact-section {
+    padding-top: calc(80px + var(--space-xl));
+    padding-bottom: var(--space-2xl);
+}
+
+/* --- Contact Grid --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.contact-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl) var(--space-lg);
+    text-align: center;
+    transition: all var(--transition-smooth);
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--color-primary);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-primary);
+}
+
+.contact-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+}
+
+.contact-card p {
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* --- Message Box --- */
+.contact-message {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-message p {
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,112 @@
+/* =========================================
+   Orders Page Styles
+   Author: [Orders Page Owner - Omar]
+   ========================================= */
+
+.order-section {
+    padding-top: calc(80px + var(--space-xl));
+    padding-bottom: var(--space-2xl);
+}
+
+/* --- Order Options Grid --- */
+.order-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.order-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    text-align: center;
+    transition: all var(--transition-smooth);
+}
+
+.order-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--color-primary);
+}
+
+.order-card-icon {
+    margin-bottom: var(--space-md);
+}
+
+.order-card-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: var(--radius-md);
+}
+
+.phone-icon {
+    font-size: 3rem;
+    color: var(--color-primary);
+}
+
+.order-card h3 {
+    font-family: var(--font-heading);
+    color: var(--color-text);
+    font-size: 1.3rem;
+    margin-bottom: var(--space-sm);
+}
+
+.order-card p {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-md);
+}
+
+.hotline-number {
+    font-size: 2rem !important;
+    font-weight: 700;
+    color: var(--color-primary) !important;
+}
+
+/* --- Button --- */
+.btn-primary {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--glow-primary);
+}
+
+/* --- Dishes Grid (iframes) --- */
+.dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-lg);
+}
+
+iframe {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    width: 100%;
+    height: 400px;
+    background: var(--color-bg-surface);
+    transition: border-color var(--transition-fast);
+}
+
+iframe:hover {
+    border-color: var(--color-primary);
+}
+
+@media (max-width: 600px) {
+    .dishes-grid {
+        grid-template-columns: 1fr;
+    }
+}

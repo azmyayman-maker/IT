@@ -1,0 +1,129 @@
+/* =========================================
+   Booking Page Styles
+   Author: [Booking Page Owner]
+   ========================================= */
+
+.booking-section {
+    padding-top: calc(80px + var(--space-xl));
+    padding-bottom: var(--space-2xl);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.booking-card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    width: 100%;
+    max-width: 600px;
+    box-shadow: var(--shadow-card);
+}
+
+/* --- Form Elements --- */
+.form-field {
+    margin-bottom: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-field label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.form-row {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.form-row .form-field {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+input, select, textarea {
+    padding: 12px 14px;
+    background: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color var(--transition-fast);
+    width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--glow-primary);
+}
+
+.time-row {
+    display: flex;
+    gap: 6px;
+}
+
+.time-row select {
+    text-align: center;
+}
+
+/* --- Visa Section --- */
+.visa-fields {
+    display: none;
+    background: var(--color-bg-surface);
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-md);
+}
+
+/* --- Book Button --- */
+.btn-book {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: var(--font-body);
+    transition: all var(--transition-fast);
+    letter-spacing: 1px;
+}
+
+.btn-book:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--glow-primary);
+}
+
+/* --- Calendar Icons --- */
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+[data-theme="light"] input[type="time"]::-webkit-calendar-picker-indicator,
+[data-theme="light"] input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: none;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .booking-card {
+        margin: 0 var(--space-md);
+    }
+}
